@@ -1,7 +1,6 @@
-import {
+import React, {
   CSSProperties, 
   FunctionComponent, 
-  StrictMode, 
   useState
 } from "react";
 import { createRoot } from "react-dom/client";
@@ -100,7 +99,7 @@ const agoraUIKit: AgoraUIKit = {
     const props: PropsInterface = {
       rtcProps: {
         appId: options.appId,
-        channel: options.channel,
+        channel: options.channel, 
         token: options.token, 
         layout: (typeof(options.layout) === "undefined") ? layout.grid : options.layout, 
         enableScreensharing: true, 
@@ -140,9 +139,9 @@ const agoraUIKit: AgoraUIKit = {
       </div>;
     }
     createRoot(viewport).render(
-      <StrictMode>
+      <React.StrictMode>
         <Root />
-      </StrictMode>,
+      </React.StrictMode>,
     );
 	}, 
 	end: async function() {
@@ -167,3 +166,20 @@ const agoraUIKit: AgoraUIKit = {
 window.AgoraUIKit = agoraUIKit;
 
 export default agoraUIKit;
+
+
+/*
+const script = document.createElement("script");
+script.setAttribute("src", "/dist/agora-ui-kit.min.js");
+script.onload = function() {
+  console.log("Umd loaded");
+}
+document.head.append(script);
+
+AgoraUIKit.start({
+    "appId": "b321bd1e99dd4d2897efdc44bceb32c5",
+    "channel": "test_meeting_42",
+    "token": "007eJxTYGDYXmv4w4i7N+3UWov5zy66xtu9fC2lvrovM6j2cP3B0D0KDEnGRoZJKYaplpYpKSYpRhaW5qlpKckmJknJqUCpZNPc1xzpOowMDB2sAiyMDIwMLEAM4jOBSWYwyQIm+RlKUotL4nNTU0sy89LjTYxYGIxMDM0AaE0j2A==",
+    "userId": 2416,
+})
+*/

@@ -2,41 +2,54 @@
   "name": "agora-ui-kit",
   "private": true,
   "version": "0.0.0",
-  "type": "module", 
-  "source": "src/main.tsx", 
-  "main": "dist/agora-ui-kit.cjs", 
-  "module": "dist/agora-ui-kit.esm.js", 
-  "unpkg": "dist/agora-ui-kit.umd.js", 
-  "types": "dist/main.d.ts", 
+  "type": "module",
+  "main": "dist/agora-ui-kit.min.js",
+  "module": "dist/agora-ui-kit.esm.js",
+  "unpkg": "dist/agora-ui-kit.min.js",
+  "browser": "dist/agora-ui-kit.min.js",
+  "types": "dist/main.d.ts",
+  "exports": {
+    "import": "dist/agora-ui-kit.esm.js",
+    "require": "dist/agora-ui-kit.cjs"
+  },
   "scripts": {
-    "dev": "vite", 
-    "build": "tsc -b && vite build", 
-    "bundle": "microbundle -i --external none --raw ./src/main.tsx", 
-    "lint": "eslint .", 
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "bundle": "tsx ./esbuild.ts && tsc src/main.tsx --declaration --emitDeclarationOnly --declarationDir dist --noCheck",
+    "lint": "eslint .",
     "preview": "vite preview"
-  }, 
+  },
   "dependencies": {
-    "agora-react-uikit": "^1.2.0", 
-    "react": "^18.3.1", 
+    "agora-react-uikit": "^1.2.0",
+    "react": "^18.3.1",
     "react-dom": "^18.3.1"
-  }, 
+  },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "esbuild": "0.21.5",
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
-    "microbundle": "^0.15.1",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1",
-    "vite-plugin-compression2": "^1.3.0"
-  }, 
+    "vite": "^5.4.1"
+  },
   "repository": {
-    "type": "git", 
+    "type": "git",
     "url": "git+"
+  },
+  "keywords": [
+    "agora",
+    "agora-sdk",
+    "agora-video",
+    "video-call"
+  ],
+  "author": {
+    "name": "Nifemi Sobowale",
+    "email": "nifemisobowale@gmail.com"
   }
 }
