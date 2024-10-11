@@ -1,7 +1,7 @@
-# agora-uikit {#main}
+# agora-uikit
 Agora video ui kit for non-react web projects, a wrapper over the [agora-react-uikit](https://www.npmjs.com/package/agora-react-uikit) package.
 
-## Installation {#installation}
+## Installation
 ### Package manager
 Using npm
 ```bash
@@ -22,7 +22,7 @@ import AgoraUIKit from "agora-ui-kit";
 ```js
 const AgoraUIKit = require("agora-ui-kit");
 ```
-### CDN {#cdn}
+### CDN
 Unpkg
 ```html
 <script src="https://unpkg.com/agora-ui-kit@1.0/dist/agora-ui-kit.umd.js"></script>
@@ -31,7 +31,7 @@ JSDelivr
 ```html
 <script src="https://cdn.jsdelivr.net/gh/nfmshow/agora-ui-kit/dist/agora-ui-kit.umd.js"></script>
 ```
-## Usage Example {#usage-example}
+## Usage Example
 ```js
 AgoraUIKit.start({
   appId: "xxxxxx", // Your agora app id
