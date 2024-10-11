@@ -1,6 +1,6 @@
 {
   "name": "agora-ui-kit",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "main": "dist/agora-ui-kit.min.js",
@@ -51,5 +51,14 @@
   "author": {
     "name": "Nifemi Sobowale",
     "email": "nifemisobowale@gmail.com"
-  }
+  }, 
+  "files": [
+    "dist/agora-ui-kit.cjs", 
+    "dist/main.d.ts", 
+    "dist/agora-ui-kit.esm.js", 
+    "dist/agora-ui-kit.min.js", 
+    "package.json", 
+    "README.md", 
+    "LICENSE"
+  ]
 }
