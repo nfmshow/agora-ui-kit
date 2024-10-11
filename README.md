@@ -25,11 +25,11 @@ const AgoraUIKit = require("agora-ui-kit");
 ### CDN
 Unpkg
 ```html
-<script src="https://unpkg.com/agora-ui-kit@1.0/dist/agora-ui-kit.umd.js"></script>
+<script src="https://unpkg.com/agora-ui-kit/dist/agora-ui-kit.min.js"></script>
 ```
 JSDelivr
 ```html
-<script src="https://cdn.jsdelivr.net/gh/nfmshow/agora-ui-kit/dist/agora-ui-kit.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/nfmshow/agora-ui-kit/dist/agora-ui-kit.min.js"></script>
 ```
 ## Usage Example
 ```js
