@@ -1,7 +1,7 @@
 {
   "name": "agora-ui-kit",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/agora-ui-kit.min.js",
   "module": "dist/agora-ui-kit.esm.js",
@@ -60,5 +60,6 @@
     "package.json", 
     "README.md", 
     "LICENSE"
-  ]
+  ], 
+  "license": "MIT"
 }

@@ -1,5 +1,5 @@
 # agora-uikit
-Agora video ui kit for non-react web projects, a wrapper over the [agora-react-uikit](https://www.npmjs.com/package/agora-react-uikit) package.
+A web library (non-react projects) for easy integration of Agora video calling feature. It's a thin wrapper over the [agora-react-uikit](https://www.npmjs.com/package/agora-react-uikit) package.
 
 ## Installation
 ### Package manager
