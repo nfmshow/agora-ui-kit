@@ -29,7 +29,7 @@ export interface AgoraUIKit {
     /** Launches the ui kit. */
     start: (o: AgoraUIKitOptions) => any;
     /** Destroys the ui kit instance. Does nothing if kit has not been launched. */
-    end: () => void;
+    end: () => Promise<void>;
     /** Private - Unmounts the ui kit. */
     unmount?: () => void;
     /** Private - Ui kit options. */
