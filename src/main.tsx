@@ -167,19 +167,3 @@ window.AgoraUIKit = agoraUIKit;
 
 export default agoraUIKit;
 
-
-/*
-const script = document.createElement("script");
-script.setAttribute("src", "/dist/agora-ui-kit.min.js");
-script.onload = function() {
-  console.log("Umd loaded");
-}
-document.head.append(script);
-
-AgoraUIKit.start({
-    "appId": "b321bd1e99dd4d2897efdc44bceb32c5",
-    "channel": "test_meeting_42",
-    "token": "007eJxTYGDYXmv4w4i7N+3UWov5zy66xtu9fC2lvrovM6j2cP3B0D0KDEnGRoZJKYaplpYpKSYpRhaW5qlpKckmJknJqUCpZNPc1xzpOowMDB2sAiyMDIwMLEAM4jOBSWYwyQIm+RlKUotL4nNTU0sy89LjTYxYGIxMDM0AaE0j2A==",
-    "userId": 2416,
-})
-*/
